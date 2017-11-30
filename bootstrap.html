@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="clickToggle2.js"></script>
   <style>
   body {
       position: relative;
+      paddingi-bottom: 70px;
   }
   ul.nav-pills {
       top: 20px;
@@ -37,21 +39,21 @@
   }
   </style>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+<body id="body" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
 <div class="container">
   <div class="row">
     <nav class="col-sm-3" id="myScrollspy">
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-	<li><a href="#section4">Section 4</a></li>
-	<li><a href="#section5">Section 5</a></li>
-	<li><a href="#section6">Section 6</a></li>
-	<li><a href="#section7">Section 7</a></li>
-	<li><a href="#section8">Section 8</a></li>
-	<li><a href="#section9">Section 9</a></li>
+        <li class="active"><a href="javascript:focusScroll1();">Section 1</a></li>
+        <li><a href="javascript:focusScroll2();">Section 2</a></li>
+        <li><a href="javascript:focusScroll3();">Section 3</a></li>
+	<li><a href="javascript:focusScroll4();">Section 4</a></li>
+	<li><a href="javascript:focusScroll5();">Section 5</a></li>
+	<li><a href="javascript:focusScroll6();">Section 6</a></li>
+	<li><a href="javascript:focusScroll7();">Section 7</a></li>
+	<li><a href="javascript:focusScroll8();">Section 8</a></li>
+	<li><a href="javascript:focusScroll9();">Section 9</a></li>
       </ul>
     </nav>
     <div class="col-sm-9">
@@ -94,7 +96,6 @@
     </div>
   </div>
 </div>
-
 </body>
 </html>
 
